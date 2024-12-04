@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: get_weather
-
-openweather:
-  api-key: "c87b7ada87fe8a2af57fdfbae3dbdccb"
