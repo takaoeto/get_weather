@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="//www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <Title>天気App</Title>
+        <link rel="stylesheet" href="../static/css/common.css">
+    </head>
+    <body>    
+        <h1>天気App</h1>
+        <h3>天気を知りたい場所を入力してください</h3>
+        <form id="weatherForm">
+            <label for="prefecture">都道府県: </label>
+            <select id="prefecture" name="prefecture" required>
+                <option value="">選択してください</option>
+                <option value="Hokkaido">北海道</option>
+                <option value="Aomori">青森</option>
+                <option value="Iwate">岩手</option>
+                <option value="Miyagi">宮城</option>
+                <option value="Akita">秋田</option>
+                <option value="Yamagata">山形</option>
+                <option value="Fukushima">福島</option>
+                <option value="Ibaraki">茨城</option>
+                <option value="Tochigi">栃木</option>
+                <option value="Gunma">群馬</option>
+                <option value="Saitama">埼玉</option>
+                <option value="Chiba">千葉</option>
+                <option value="Tokyo">東京</option>
+                <option value="Kanagawa">神奈川</option>
+                <option value="Niigata">新潟</option>
+                <option value="Toyama">富山</option>
+                <option value="Ishikawa">石川</option>
+                <option value="Fukui">福井</option>
+                <option value="Yamanashi">山梨</option>
+                <option value="Nagano">長野</option>
+                <option value="Gifu">岐阜</option>
+                <option value="Shizuoka">静岡</option>
+                <option value="Aichi">愛知</option>
+                <option value="Mie">三重</option>
+                <option value="Shiga">滋賀</option>
+                <option value="Kyoto">京都</option>
+                <option value="Osaka">大阪</option>
+                <option value="Hyogo">兵庫</option>
+                <option value="Nara">奈良</option>
+                <option value="Wakayama">和歌山</option>
+                <option value="Tottori">鳥取</option>
+                <option value="Shimane">島根</option>
+                <option value="Okayama">岡山</option>
+                <option value="Hiroshima">広島</option>
+                <option value="Yamaguchi">山口</option>
+                <option value="Tokushima">徳島</option>
+                <option value="Kagawa">香川</option>
+                <option value="Ehime">愛媛</option>
+                <option value="Kochi">高知</option>
+                <option value="Fukuoka">福岡</option>
+                <option value="Saga">佐賀</option>
+                <option value="Nagasaki">長崎</option>
+                <option value="Kumamoto">熊本</option>
+                <option value="Oita">大分</option>
+                <option value="Miyazaki">宮崎</option>
+                <option value="Kagoshima">鹿児島</option>
+                <option value="Okinawa">沖縄</option>
+            </select>
+            <button type="submit">天気を取得</button>
+            <button type="reset">リセット</button>
+        </form>
+
+        <div id="weatherResult"></div> 
+        
+        <script src="../static/js/common.js"></script>
+    </body>
+</html>
